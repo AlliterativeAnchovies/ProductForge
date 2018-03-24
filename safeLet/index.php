@@ -511,7 +511,7 @@
     <script src="js/sb-admin-datatables.min.js"></script>
     <!-- <script src="js/sb-admin-charts.min.js"></script> -->
     <script> 
-    	var time_temp = 0;
+    	var time_temp = 1;
     	var notificationArray = [
           `
             <a class="list-group-item list-group-item-action" href="#">
@@ -569,13 +569,13 @@
             }
             console.log(time_temp);
             time_temp++;
-            thingamajig.innerHTML = tobeinnerHTML;
+            thingamajig.innerHTML = tobeinnerHTML[0]+tobeinnerHTML[1]+tobeinnerHTML[2]+tobeinnerHTML[3];
           }
     var thingamajig;
       function showDiv() {
         //$("#cards").hide(0).delay(2000).show(0);
         
-          setInterval(glagleforge, 1000);
+          setInterval(glagleforge, 5000);
       };
       showDiv();
     </script>
