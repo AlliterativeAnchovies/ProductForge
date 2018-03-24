@@ -511,10 +511,8 @@
     <script src="js/sb-admin-datatables.min.js"></script>
     <!-- <script src="js/sb-admin-charts.min.js"></script> -->
     <script> 
-      function showDiv() {
-        //$("#cards").hide(0).delay(2000).show(0);
-        var thingamajig = document.getElementById("notificationsMadeDynamic");
-        var notificationArray = [
+    	var time_temp = 0;
+    	var notificationArray = [
           `
             <a class="list-group-item list-group-item-action" href="#">
                   <div class="media">
@@ -563,14 +561,22 @@
                 </a>
                 `
         ];
-        var tobeinnerHTML = [];
-        notificationArray.forEach(function () {
-          setTimeout(function () {
-            notificationArray.unshift().push(tobeinnerHTML);
-          }, 1000)
-        })
+    	function glagleforge() {
+          	var tobeinnerHTML = [];
+          	thingamajig = document.getElementById("notificationsMadeDynamic");
+            for (var i = 0;i<notificationArray.length;i++) {
+            	tobeinnerHTML[i] = notificationArray[(i+time_temp)%notificationArray.length];
+            }
+            console.log(time_temp);
+            time_temp++;
+            thingamajig.innerHTML = tobeinnerHTML;
+          }
+    var thingamajig;
+      function showDiv() {
+        //$("#cards").hide(0).delay(2000).show(0);
+        
+          setInterval(glagleforge, 1000);
       };
-      thingamajig.innerHTML = tobeinnerHTML;
       showDiv();
     </script>
     <script src="js/loadTableDatas.js"></script>
