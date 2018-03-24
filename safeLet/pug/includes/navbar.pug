@@ -1,15 +1,15 @@
 // Navigation
 nav#mainNav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
-  a.navbar-brand(href='index.html') Start Bootstrap
+  a.navbar-brand(href='index.html') Safe let
   button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
     span.navbar-toggler-icon
   #navbarResponsive.collapse.navbar-collapse
     ul#exampleAccordion.navbar-nav.navbar-sidenav
       li.nav-item(data-toggle='tooltip', data-placement='right', title='Dashboard')
         a.nav-link(href='index.html')
-          i.fa.fa-fw.fa-dashboard
+          i.fa.fa-fw.fa-hotel
           span.nav-link-text
-            | Dashboard
+            | Tenant
       li.nav-item(data-toggle='tooltip', data-placement='right', title='Charts')
         a.nav-link(href='charts.html')
           i.fa.fa-fw.fa-area-chart
@@ -20,21 +20,21 @@ nav#mainNav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
           i.fa.fa-fw.fa-table
           span.nav-link-text
             | Tables
-      li.nav-item(data-toggle='tooltip', data-placement='right', title='Components')
+      li.nav-item(data-toggle='tooltip', data-placement='right', title='Landlord')
         a.nav-link.nav-link-collapse.collapsed(data-toggle='collapse', href='#collapseComponents', data-parent='#exampleAccordion')
           i.fa.fa-fw.fa-wrench
           span.nav-link-text
-            | Components
+            | Landlord
         ul#collapseComponents.sidenav-second-level.collapse
           li
-            a(href='navbar.html') Navbar
+            a(href='navbar.html') Available Tenants
           li
-            a(href='cards.html') Cards
-      li.nav-item(data-toggle='tooltip', data-placement='right', title='Example Pages')
+            a(href='cards.html') Post New
+      li.nav-item(data-toggle='tooltip', data-placement='right', title='Login Menu')
         a.nav-link.nav-link-collapse.collapsed(data-toggle='collapse', href='#collapseExamplePages', data-parent='#exampleAccordion')
           i.fa.fa-fw.fa-file
           span.nav-link-text
-            | Example Pages
+            | Login Menu
         ul#collapseExamplePages.sidenav-second-level.collapse
           li
             a(href='login.html') Login Page
@@ -44,32 +44,6 @@ nav#mainNav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
             a(href='forgot-password.html') Forgot Password Page
           li
             a(href='blank.html') Blank Page
-      li.nav-item(data-toggle='tooltip', data-placement='right', title='Menu Levels')
-        a.nav-link.nav-link-collapse.collapsed(data-toggle='collapse', href='#collapseMulti', data-parent='#exampleAccordion')
-          i.fa.fa-fw.fa-sitemap
-          span.nav-link-text
-            | Menu Levels
-        ul#collapseMulti.sidenav-second-level.collapse
-          li
-            a(href='#') Second Level Item
-          li
-            a(href='#') Second Level Item
-          li
-            a(href='#') Second Level Item
-          li
-            a.nav-link-collapse.collapsed(data-toggle='collapse', href='#collapseMulti2') Third Level
-            ul#collapseMulti2.sidenav-third-level.collapse
-              li
-                a(href='#') Third Level Item
-              li
-                a(href='#') Third Level Item
-              li
-                a(href='#') Third Level Item
-      li.nav-item(data-toggle='tooltip', data-placement='right', title='Link')
-        a.nav-link(href='#')
-          i.fa.fa-fw.fa-link
-          span.nav-link-text
-            | Link
     ul.navbar-nav.sidenav-toggler
       li.nav-item
         a#sidenavToggler.nav-link.text-center
