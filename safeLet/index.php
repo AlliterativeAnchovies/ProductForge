@@ -433,7 +433,7 @@
                   <th>First time renter?</th>
                 </tr>
               </tfoot>
-              <tbody>
+              <tbody class="tableDisplayFromSQL">
                 <tr>
                   <td>Tiger Nixon</td>
                   <td>£100</td>
@@ -573,6 +573,7 @@
       thingamajig.innerHTML = tobeinnerHTML;
       showDiv();
     </script>
+    <script src="js/loadTableDatas.js"></script>
   </div>
 </body>
 
