@@ -1,3 +1,4 @@
+<?php
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -11,26 +12,32 @@ if ($conn->connect_error) {
 	die("Connection failed: " . $conn->connect_error);
 } 
 else {
-	//$query = $_POST["name"];
-	//$result = $conn->query($query);
-	$result = $conn->query("SELECT * FROM Tenants;");
+	$query = $_POST["Query"];
+	$result = $conn->query($query);
+	//$result = $conn->query("SELECT * FROM Tenants;");
 	$counter = 0;
-	while ($row = $result->fetch_assoc()) {
-		//this goes through every row in the output query
-		echo "var firstname = [];";
-		echo "var firstname[".$counter."] = ".$_row["firstname"].";";
-		echo "var lastname = [];";
-		echo "var lastname[".$counter."] = ".$_row["lastname"].";";
-		echo "var price = [];";
-		echo "var price[".$counter."] = ".$_row["price"].";";
-		echo "var location = [];";
-		echo "var location[".$counter."] = ".$_row["location"].";";
-		echo "var description = [];";
-		echo "var description[".$counter."] = ".$_row["description"].";";
-		echo "var accomodation_type = [];";
-		echo "var accomodation_type[".$counter."] = ".$_row["accomodation_type"].";";
-		echo "var first_time_renter = [];";
-		echo "var first_time_renter[".$counter."] = ".$_row["first_time_renter"].";";
-		$counter = $counter+1;
+	echo "var firstname = [];";
+	echo "var lastname = [];";
+	echo "var price = [];";
+	echo "var location = [];";
+	echo "var description = [];";
+	echo "var accomodation_type = [];";
+	echo "var first_time_renter = [];";
+	if ($result === false) {
+		echo "console.log(".'"'."Invalid Query: ".'"'.$query.");";
+	}
+	else {
+		while ($row = $result->fetch_assoc()) {
+			//this goes through every row in the output query
+			echo "firstname[".$counter."] = ".'"'.$row["firstname"].'"'.";";
+			echo "lastname[".$counter."] = ".'"'.$row["lastname"].'"'.";";
+			echo "price[".$counter."] = ".$row["price"].";";
+			echo "location[".$counter."] = ".'"'.$row["location"].'"'.";";
+			echo "description[".$counter."] = ".'"'.$row["description"].'"'.";";
+			echo "accomodation_type[".$counter."] = ".'"'.$row["accomodation_type"].'"'.";";
+			echo "first_time_renter[".$counter."] = ".$row["first_time_renter"].";";
+			$counter = $counter+1;
+		}
 	}
 }
+?>
