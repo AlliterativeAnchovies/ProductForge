@@ -433,11 +433,11 @@
                   <th>First time renter?</th>
                 </tr>
               </tfoot>
-              <tbody class="tableDisplayFromSQL">
+              <tbody>
                 <tr>
-                  <td>Tiger Nixon</td>
-                  <td>£100</td>
-                  <td>Edinburgh</td>
+                  <td>Ashton Cox</td>
+                  <td>£150</td>
+                  <td>Aberdeen</td>
                   <td>this will be the bio of the person</td>
                   <td>Studio</td>
                   <td>Yes</td>
@@ -451,12 +451,36 @@
                   <td>Yes</td>
                 </tr>
                 <tr>
-                  <td>Ashton Cox</td>
-                  <td>£150</td>
-                  <td>aberdeen</td>
+                  <td>Tiger Nixon</td>
+                  <td>£100</td>
+                  <td>Edinburgh</td>
+                  <td>this will be the bio of the person</td>
+                  <td>Studio</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>cornard Clibes</td>
+                  <td>£100</td>
+                  <td>Ayr</td>
                   <td>this will be the bio of the person</td>
                   <td>Two bedroom</td>
                   <td>No</td>
+                </tr>
+                <tr>
+                  <td>Susan Summer</td>
+                  <td>£250</td>
+                  <td>Manchester</td>
+                  <td>this will be the bio of the person</td>
+                  <td>Studio</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Lio Livinstine</td>
+                  <td>£170</td>
+                  <td>Edinburgh</td>
+                  <td>this will be the bio of the person</td>
+                  <td>Studio</td>
+                  <td>Yes</td>
                 </tr>
               </tbody>
             </table>
