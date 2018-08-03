@@ -433,7 +433,7 @@
                   <th>First time renter?</th>
                 </tr>
               </tfoot>
-              <tbody>
+              <tbody class="tableDisplayFromSQL">
                 <tr>
                   <td>Ashton Cox</td>
                   <td>£150</td>
